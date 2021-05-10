@@ -1,7 +1,7 @@
 package com.maxhayday.math_service.controller;
 
 import com.maxhayday.math_service.Examiner;
-import com.maxhayday.model.Exercise;
+import com.maxhayday.math_service.model.Exercise;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

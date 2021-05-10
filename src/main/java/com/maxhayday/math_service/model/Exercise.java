@@ -1,4 +1,4 @@
-package com.maxhayday.model;
+package com.maxhayday.math_service.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

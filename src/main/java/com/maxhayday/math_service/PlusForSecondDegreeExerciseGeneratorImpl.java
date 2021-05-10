@@ -1,7 +1,7 @@
 package com.maxhayday.math_service;
 
 
-import com.maxhayday.model.Exercise;
+import com.maxhayday.math_service.model.Exercise;
 
 public class PlusForSecondDegreeExerciseGeneratorImpl implements ExerciseGenerator {
 
