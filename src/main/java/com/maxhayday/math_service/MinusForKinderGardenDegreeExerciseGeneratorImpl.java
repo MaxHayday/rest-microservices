@@ -10,7 +10,7 @@ public class MinusForKinderGardenDegreeExerciseGeneratorImpl implements Exercise
         int a = RandomUtils.getRandomNumberUsingInts(1, 100);
         int b = RandomUtils.getRandomNumberUsingInts(1, a);
         return Exercise.builder()
-                .question(a + " - " + b)
+                .question(a + Operation.SUBTRACTION.getOperator() + b)
                 .answer(String.valueOf(a - b))
                 .build();
     }

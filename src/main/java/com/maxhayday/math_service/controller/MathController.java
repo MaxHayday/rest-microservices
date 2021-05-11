@@ -1,6 +1,6 @@
 package com.maxhayday.math_service.controller;
 
-import com.maxhayday.math_service.Examiner;
+import com.maxhayday.math_service.MathService;
 import com.maxhayday.math_service.model.Exercise;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +15,8 @@ public class MathController {
 
     @GetMapping("/random")
     public List<Exercise> should_return_random_exercises(@RequestParam("count") int count) {
-        Examiner examiner = new Examiner();
-        List<Exercise> exercises = examiner.getExercises(count);
+        MathService mathService = new MathService();
+        List<Exercise> exercises = mathService.getExercises(count);
         return exercises;
     }
 }

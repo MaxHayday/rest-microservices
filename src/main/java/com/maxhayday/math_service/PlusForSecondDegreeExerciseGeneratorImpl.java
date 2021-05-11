@@ -10,7 +10,7 @@ public class PlusForSecondDegreeExerciseGeneratorImpl implements ExerciseGenerat
         int a = RandomUtils.getRandomNumberUsingInts(0, 100);
         int b = RandomUtils.getRandomNumberUsingInts(0, 100);
         return Exercise.builder()
-                .question(a + " + " + b)
+                .question(a + Operation.ADDITION.getOperator() + b)
                 .answer(String.valueOf(a + b))
                 .build();
     }

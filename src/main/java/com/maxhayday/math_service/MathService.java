@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 
-public class Examiner {
+public class MathService {
 
     private List<ExerciseGenerator> exerciseGenerators = List.of(
             new PlusForSecondDegreeExerciseGeneratorImpl(),

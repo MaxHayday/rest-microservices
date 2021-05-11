@@ -10,7 +10,7 @@ public class MultiplyForSecondDegreeExerciseGeneratorImpl implements ExerciseGen
         int a = RandomUtils.getRandomNumberUsingInts(2, 10);
         int b = RandomUtils.getRandomNumberUsingInts(2, 10);
         return Exercise.builder()
-                .question(a + " * " + b)
+                .question(a + Operation.MULTIPLICATION.getOperator() + b)
                 .answer(String.valueOf(a * b))
                 .build();
     }
